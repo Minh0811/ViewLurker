@@ -14,6 +14,15 @@
 		F78132922A78BF2700F77430 /* ViewLurkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78132912A78BF2700F77430 /* ViewLurkerTests.swift */; };
 		F781329C2A78BF2700F77430 /* ViewLurkerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F781329B2A78BF2700F77430 /* ViewLurkerUITests.swift */; };
 		F781329E2A78BF2700F77430 /* ViewLurkerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F781329D2A78BF2700F77430 /* ViewLurkerUITestsLaunchTests.swift */; };
+		F78132B32A78C8C900F77430 /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78132B22A78C8C900F77430 /* Destination.swift */; };
+		F78132B52A78C8E300F77430 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78132B42A78C8E300F77430 /* DataModel.swift */; };
+		F78132B72A78C90900F77430 /* IOSCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78132B62A78C90900F77430 /* IOSCamera.swift */; };
+		F78132B92A78C94C00F77430 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78132B82A78C94C00F77430 /* WelcomeView.swift */; };
+		F78132BB2A78C99500F77430 /* Welcome-background.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F78132BA2A78C99500F77430 /* Welcome-background.mp4 */; };
+		F78132BD2A78C9B600F77430 /* LoopingBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78132BC2A78C9B600F77430 /* LoopingBackground.swift */; };
+		F78132BF2A78C9FA00F77430 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78132BE2A78C9FA00F77430 /* ListView.swift */; };
+		F78132C12A78CA2D00F77430 /* DestinationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78132C02A78CA2D00F77430 /* DestinationRow.swift */; };
+		F78132C22A78CB8B00F77430 /* destinations.json in Resources */ = {isa = PBXBuildFile; fileRef = F78132AF2A78C72500F77430 /* destinations.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +53,15 @@
 		F78132972A78BF2700F77430 /* ViewLurkerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewLurkerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F781329B2A78BF2700F77430 /* ViewLurkerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLurkerUITests.swift; sourceTree = "<group>"; };
 		F781329D2A78BF2700F77430 /* ViewLurkerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLurkerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F78132AF2A78C72500F77430 /* destinations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = destinations.json; sourceTree = "<group>"; };
+		F78132B22A78C8C900F77430 /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
+		F78132B42A78C8E300F77430 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		F78132B62A78C90900F77430 /* IOSCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSCamera.swift; sourceTree = "<group>"; };
+		F78132B82A78C94C00F77430 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		F78132BA2A78C99500F77430 /* Welcome-background.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Welcome-background.mp4"; path = "../../../../../Downloads/Welcome-background.mp4"; sourceTree = "<group>"; };
+		F78132BC2A78C9B600F77430 /* LoopingBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopingBackground.swift; sourceTree = "<group>"; };
+		F78132BE2A78C9FA00F77430 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		F78132C02A78CA2D00F77430 /* DestinationRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +114,9 @@
 			children = (
 				F78132802A78BF2000F77430 /* ViewLurkerApp.swift */,
 				F78132822A78BF2000F77430 /* ContentView.swift */,
+				F78132B12A78C8A300F77430 /* Assets */,
+				F78132AA2A78C65D00F77430 /* Views */,
+				F78132AB2A78C67500F77430 /* DataModels */,
 				F78132842A78BF2600F77430 /* Assets.xcassets */,
 				F78132862A78BF2600F77430 /* Preview Content */,
 			);
@@ -125,6 +146,60 @@
 				F781329D2A78BF2700F77430 /* ViewLurkerUITestsLaunchTests.swift */,
 			);
 			path = ViewLurkerUITests;
+			sourceTree = "<group>";
+		};
+		F78132AA2A78C65D00F77430 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F78132AE2A78C6E500F77430 /* DetailView */,
+				F78132AC2A78C6C300F77430 /* ListView */,
+				F78132AD2A78C6D200F77430 /* WelcomeView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F78132AB2A78C67500F77430 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				F78132AF2A78C72500F77430 /* destinations.json */,
+				F78132B22A78C8C900F77430 /* Destination.swift */,
+				F78132B42A78C8E300F77430 /* DataModel.swift */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		F78132AC2A78C6C300F77430 /* ListView */ = {
+			isa = PBXGroup;
+			children = (
+				F78132BE2A78C9FA00F77430 /* ListView.swift */,
+				F78132C02A78CA2D00F77430 /* DestinationRow.swift */,
+			);
+			path = ListView;
+			sourceTree = "<group>";
+		};
+		F78132AD2A78C6D200F77430 /* WelcomeView */ = {
+			isa = PBXGroup;
+			children = (
+				F78132B82A78C94C00F77430 /* WelcomeView.swift */,
+				F78132B62A78C90900F77430 /* IOSCamera.swift */,
+				F78132BC2A78C9B600F77430 /* LoopingBackground.swift */,
+			);
+			path = WelcomeView;
+			sourceTree = "<group>";
+		};
+		F78132AE2A78C6E500F77430 /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
+		F78132B12A78C8A300F77430 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F78132BA2A78C99500F77430 /* Welcome-background.mp4 */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +306,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F78132C22A78CB8B00F77430 /* destinations.json in Resources */,
+				F78132BB2A78C99500F77430 /* Welcome-background.mp4 in Resources */,
 				F78132882A78BF2600F77430 /* Preview Assets.xcassets in Resources */,
 				F78132852A78BF2600F77430 /* Assets.xcassets in Resources */,
 			);
@@ -257,8 +334,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F78132B52A78C8E300F77430 /* DataModel.swift in Sources */,
 				F78132832A78BF2000F77430 /* ContentView.swift in Sources */,
+				F78132BD2A78C9B600F77430 /* LoopingBackground.swift in Sources */,
+				F78132B32A78C8C900F77430 /* Destination.swift in Sources */,
+				F78132B72A78C90900F77430 /* IOSCamera.swift in Sources */,
 				F78132812A78BF2000F77430 /* ViewLurkerApp.swift in Sources */,
+				F78132C12A78CA2D00F77430 /* DestinationRow.swift in Sources */,
+				F78132B92A78C94C00F77430 /* WelcomeView.swift in Sources */,
+				F78132BF2A78C9FA00F77430 /* ListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
