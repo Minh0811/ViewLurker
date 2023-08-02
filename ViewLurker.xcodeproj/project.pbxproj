@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F78132812A78BF2000F77430 /* ViewLurkerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78132802A78BF2000F77430 /* ViewLurkerApp.swift */; };
-		F78132832A78BF2000F77430 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78132822A78BF2000F77430 /* ContentView.swift */; };
 		F78132852A78BF2600F77430 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F78132842A78BF2600F77430 /* Assets.xcassets */; };
 		F78132882A78BF2600F77430 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F78132872A78BF2600F77430 /* Preview Assets.xcassets */; };
 		F78132922A78BF2700F77430 /* ViewLurkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78132912A78BF2700F77430 /* ViewLurkerTests.swift */; };
@@ -23,6 +22,9 @@
 		F78132BF2A78C9FA00F77430 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78132BE2A78C9FA00F77430 /* ListView.swift */; };
 		F78132C12A78CA2D00F77430 /* DestinationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78132C02A78CA2D00F77430 /* DestinationRow.swift */; };
 		F78132C22A78CB8B00F77430 /* destinations.json in Resources */ = {isa = PBXBuildFile; fileRef = F78132AF2A78C72500F77430 /* destinations.json */; };
+		F78A890C2A78E1CA00AC2927 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78A890B2A78E1CA00AC2927 /* SwiftUIView.swift */; };
+		F78A890E2A791F2100AC2927 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78A890D2A791F2100AC2927 /* RatingView.swift */; };
+		F78A89122A7ACDF600AC2927 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78A89112A7ACDF600AC2927 /* SearchBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +47,6 @@
 /* Begin PBXFileReference section */
 		F781327D2A78BF2000F77430 /* ViewLurker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewLurker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F78132802A78BF2000F77430 /* ViewLurkerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLurkerApp.swift; sourceTree = "<group>"; };
-		F78132822A78BF2000F77430 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F78132842A78BF2600F77430 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F78132872A78BF2600F77430 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F781328D2A78BF2700F77430 /* ViewLurkerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewLurkerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +63,9 @@
 		F78132BC2A78C9B600F77430 /* LoopingBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopingBackground.swift; sourceTree = "<group>"; };
 		F78132BE2A78C9FA00F77430 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		F78132C02A78CA2D00F77430 /* DestinationRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationRow.swift; sourceTree = "<group>"; };
+		F78A890B2A78E1CA00AC2927 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		F78A890D2A791F2100AC2927 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		F78A89112A7ACDF600AC2927 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +117,6 @@
 			isa = PBXGroup;
 			children = (
 				F78132802A78BF2000F77430 /* ViewLurkerApp.swift */,
-				F78132822A78BF2000F77430 /* ContentView.swift */,
 				F78132B12A78C8A300F77430 /* Assets */,
 				F78132AA2A78C65D00F77430 /* Views */,
 				F78132AB2A78C67500F77430 /* DataModels */,
@@ -173,6 +176,9 @@
 			children = (
 				F78132BE2A78C9FA00F77430 /* ListView.swift */,
 				F78132C02A78CA2D00F77430 /* DestinationRow.swift */,
+				F78A890B2A78E1CA00AC2927 /* SwiftUIView.swift */,
+				F78A890D2A791F2100AC2927 /* RatingView.swift */,
+				F78A89112A7ACDF600AC2927 /* SearchBar.swift */,
 			);
 			path = ListView;
 			sourceTree = "<group>";
@@ -335,13 +341,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F78132B52A78C8E300F77430 /* DataModel.swift in Sources */,
-				F78132832A78BF2000F77430 /* ContentView.swift in Sources */,
 				F78132BD2A78C9B600F77430 /* LoopingBackground.swift in Sources */,
 				F78132B32A78C8C900F77430 /* Destination.swift in Sources */,
+				F78A890E2A791F2100AC2927 /* RatingView.swift in Sources */,
+				F78A890C2A78E1CA00AC2927 /* SwiftUIView.swift in Sources */,
 				F78132B72A78C90900F77430 /* IOSCamera.swift in Sources */,
 				F78132812A78BF2000F77430 /* ViewLurkerApp.swift in Sources */,
 				F78132C12A78CA2D00F77430 /* DestinationRow.swift in Sources */,
 				F78132B92A78C94C00F77430 /* WelcomeView.swift in Sources */,
+				F78A89122A7ACDF600AC2927 /* SearchBar.swift in Sources */,
 				F78132BF2A78C9FA00F77430 /* ListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

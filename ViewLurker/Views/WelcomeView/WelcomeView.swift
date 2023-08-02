@@ -10,14 +10,7 @@ import SwiftUI
 struct WelcomeView: View {
     @State var isActive : Bool = true
     var body: some View {
-        ZStack{
-            if isActive {
-                IOSCamera(active: $isActive)
-            }
-            else {
-                ListView()
-            }
-        }
+            IOSCamera()
     }
 }
 

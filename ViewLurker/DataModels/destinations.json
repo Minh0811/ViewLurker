@@ -1,10 +1,11 @@
 [
     {
         "id": 1,
-        "name": "Beach Paradise",
+        "name": "Notre-Dame Cathedral Basilica of Saigon",
+        "shortDescription" : "Short description",
         "description": "Experience the ultimate relaxation at this stunning beach paradise. Enjoy golden sands, crystal-clear waters, and breathtaking sunsets.",
         "starReview": 4,
-        "imageName": "beach_paradise.jpg",
+        "imageName": "Saigon-Notre-Dame-cathedral",
         "coordinates": {
             "latitude": 12.345,
             "longitude": 67.890
@@ -12,14 +13,54 @@
     },
     {
         "id": 2,
-        "name": "Mountain Retreat",
+        "name": "Central Post Office",
+        "shortDescription" : "Short description",
         "description": "Escape to the serene beauty of the mountains. Explore lush forests, cascading waterfalls, and panoramic views from your cozy cabin.",
         "starReview": 5,
-        "imageName": "mountain_retreat.jpg",
+        "imageName": "Saigon-Notre-Dame-cathedral",
         "coordinates": {
             "latitude": 34.567,
             "longitude": 78.901
         }
     }
+    ,
+    {
+        "id": 3,
+        "name": "Bến Thành Market",
+        "shortDescription" : "Short description",
+        "description": "Escape to the serene beauty of the mountains. Explore lush forests, cascading waterfalls, and panoramic views from your cozy cabin.",
+        "starReview": 3,
+        "imageName": "Saigon-Notre-Dame-cathedral",
+        "coordinates": {
+            "latitude": 34.567,
+            "longitude": 78.901
+        }
+    }
+    ,
+    {
+        "id": 4,
+        "name": "Ho Chi Minh City's Antique Street (Le Cong Kieu)",
+        "shortDescription" : "Short description",
+        "description": "Escape to the serene beauty of the mountains. Explore lush forests, cascading waterfalls, and panoramic views from your cozy cabin.",
+        "starReview": 2,
+        "imageName": "Saigon-Notre-Dame-cathedral",
+        "coordinates": {
+            "latitude": 34.567,
+            "longitude": 78.901
+        }
+    },
+    {
+        "id": 5,
+        "name": "Chao Nghiêng Rooftop",
+        "shortDescription" : "Short description",
+        "description": "Escape to the serene beauty of the mountains. Explore lush forests, cascading waterfalls, and panoramic views from your cozy cabin.",
+        "starReview": 1,
+        "imageName": "Saigon-Notre-Dame-cathedral",
+        "coordinates": {
+            "latitude": 34.567,
+            "longitude": 78.901
+        }
+    }
+    
     
 ]
