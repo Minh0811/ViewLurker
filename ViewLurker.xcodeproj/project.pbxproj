@@ -15,16 +15,19 @@
 		F781329E2A78BF2700F77430 /* ViewLurkerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F781329D2A78BF2700F77430 /* ViewLurkerUITestsLaunchTests.swift */; };
 		F78132B32A78C8C900F77430 /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78132B22A78C8C900F77430 /* Destination.swift */; };
 		F78132B52A78C8E300F77430 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78132B42A78C8E300F77430 /* DataModel.swift */; };
-		F78132B72A78C90900F77430 /* IOSCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78132B62A78C90900F77430 /* IOSCamera.swift */; };
+		F78132B72A78C90900F77430 /* IOSCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78132B62A78C90900F77430 /* IOSCameraView.swift */; };
 		F78132B92A78C94C00F77430 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78132B82A78C94C00F77430 /* WelcomeView.swift */; };
 		F78132BB2A78C99500F77430 /* Welcome-background.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F78132BA2A78C99500F77430 /* Welcome-background.mp4 */; };
 		F78132BD2A78C9B600F77430 /* LoopingBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78132BC2A78C9B600F77430 /* LoopingBackground.swift */; };
 		F78132BF2A78C9FA00F77430 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78132BE2A78C9FA00F77430 /* ListView.swift */; };
-		F78132C12A78CA2D00F77430 /* DestinationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78132C02A78CA2D00F77430 /* DestinationRow.swift */; };
+		F78132C12A78CA2D00F77430 /* DestinationRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78132C02A78CA2D00F77430 /* DestinationRowView.swift */; };
 		F78132C22A78CB8B00F77430 /* destinations.json in Resources */ = {isa = PBXBuildFile; fileRef = F78132AF2A78C72500F77430 /* destinations.json */; };
 		F78A890C2A78E1CA00AC2927 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78A890B2A78E1CA00AC2927 /* SwiftUIView.swift */; };
 		F78A890E2A791F2100AC2927 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78A890D2A791F2100AC2927 /* RatingView.swift */; };
-		F78A89122A7ACDF600AC2927 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78A89112A7ACDF600AC2927 /* SearchBar.swift */; };
+		F78A89162A7B8A3000AC2927 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78A89152A7B8A3000AC2927 /* DetailView.swift */; };
+		F78A891A2A7BE50500AC2927 /* nhathoducba1@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = F78A89172A7BE50500AC2927 /* nhathoducba1@1x.png */; };
+		F78A891B2A7BE50500AC2927 /* nhathoducba1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F78A89182A7BE50500AC2927 /* nhathoducba1@2x.png */; };
+		F78A891C2A7BE50500AC2927 /* nhathoducba1@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F78A89192A7BE50500AC2927 /* nhathoducba1@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,15 +60,18 @@
 		F78132AF2A78C72500F77430 /* destinations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = destinations.json; sourceTree = "<group>"; };
 		F78132B22A78C8C900F77430 /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
 		F78132B42A78C8E300F77430 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
-		F78132B62A78C90900F77430 /* IOSCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSCamera.swift; sourceTree = "<group>"; };
+		F78132B62A78C90900F77430 /* IOSCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSCameraView.swift; sourceTree = "<group>"; };
 		F78132B82A78C94C00F77430 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		F78132BA2A78C99500F77430 /* Welcome-background.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Welcome-background.mp4"; path = "../../../../../Downloads/Welcome-background.mp4"; sourceTree = "<group>"; };
 		F78132BC2A78C9B600F77430 /* LoopingBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopingBackground.swift; sourceTree = "<group>"; };
 		F78132BE2A78C9FA00F77430 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
-		F78132C02A78CA2D00F77430 /* DestinationRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationRow.swift; sourceTree = "<group>"; };
+		F78132C02A78CA2D00F77430 /* DestinationRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationRowView.swift; sourceTree = "<group>"; };
 		F78A890B2A78E1CA00AC2927 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		F78A890D2A791F2100AC2927 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
-		F78A89112A7ACDF600AC2927 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		F78A89152A7B8A3000AC2927 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		F78A89172A7BE50500AC2927 /* nhathoducba1@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nhathoducba1@1x.png"; path = "../../../../../Downloads/iOS Image 2/nhathoducba1@1x.png"; sourceTree = "<group>"; };
+		F78A89182A7BE50500AC2927 /* nhathoducba1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nhathoducba1@2x.png"; path = "../../../../../Downloads/iOS Image 2/nhathoducba1@2x.png"; sourceTree = "<group>"; };
+		F78A89192A7BE50500AC2927 /* nhathoducba1@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nhathoducba1@3x.png"; path = "../../../../../Downloads/iOS Image 2/nhathoducba1@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,10 +181,9 @@
 			isa = PBXGroup;
 			children = (
 				F78132BE2A78C9FA00F77430 /* ListView.swift */,
-				F78132C02A78CA2D00F77430 /* DestinationRow.swift */,
+				F78132C02A78CA2D00F77430 /* DestinationRowView.swift */,
 				F78A890B2A78E1CA00AC2927 /* SwiftUIView.swift */,
 				F78A890D2A791F2100AC2927 /* RatingView.swift */,
-				F78A89112A7ACDF600AC2927 /* SearchBar.swift */,
 			);
 			path = ListView;
 			sourceTree = "<group>";
@@ -187,7 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				F78132B82A78C94C00F77430 /* WelcomeView.swift */,
-				F78132B62A78C90900F77430 /* IOSCamera.swift */,
+				F78132B62A78C90900F77430 /* IOSCameraView.swift */,
 				F78132BC2A78C9B600F77430 /* LoopingBackground.swift */,
 			);
 			path = WelcomeView;
@@ -196,6 +201,7 @@
 		F78132AE2A78C6E500F77430 /* DetailView */ = {
 			isa = PBXGroup;
 			children = (
+				F78A89152A7B8A3000AC2927 /* DetailView.swift */,
 			);
 			path = DetailView;
 			sourceTree = "<group>";
@@ -203,6 +209,9 @@
 		F78132B12A78C8A300F77430 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				F78A89172A7BE50500AC2927 /* nhathoducba1@1x.png */,
+				F78A89182A7BE50500AC2927 /* nhathoducba1@2x.png */,
+				F78A89192A7BE50500AC2927 /* nhathoducba1@3x.png */,
 				F78132BA2A78C99500F77430 /* Welcome-background.mp4 */,
 			);
 			path = Assets;
@@ -313,6 +322,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F78132C22A78CB8B00F77430 /* destinations.json in Resources */,
+				F78A891C2A7BE50500AC2927 /* nhathoducba1@3x.png in Resources */,
+				F78A891A2A7BE50500AC2927 /* nhathoducba1@1x.png in Resources */,
+				F78A891B2A7BE50500AC2927 /* nhathoducba1@2x.png in Resources */,
 				F78132BB2A78C99500F77430 /* Welcome-background.mp4 in Resources */,
 				F78132882A78BF2600F77430 /* Preview Assets.xcassets in Resources */,
 				F78132852A78BF2600F77430 /* Assets.xcassets in Resources */,
@@ -341,15 +353,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F78132B52A78C8E300F77430 /* DataModel.swift in Sources */,
+				F78A89162A7B8A3000AC2927 /* DetailView.swift in Sources */,
 				F78132BD2A78C9B600F77430 /* LoopingBackground.swift in Sources */,
 				F78132B32A78C8C900F77430 /* Destination.swift in Sources */,
 				F78A890E2A791F2100AC2927 /* RatingView.swift in Sources */,
 				F78A890C2A78E1CA00AC2927 /* SwiftUIView.swift in Sources */,
-				F78132B72A78C90900F77430 /* IOSCamera.swift in Sources */,
+				F78132B72A78C90900F77430 /* IOSCameraView.swift in Sources */,
 				F78132812A78BF2000F77430 /* ViewLurkerApp.swift in Sources */,
-				F78132C12A78CA2D00F77430 /* DestinationRow.swift in Sources */,
+				F78132C12A78CA2D00F77430 /* DestinationRowView.swift in Sources */,
 				F78132B92A78C94C00F77430 /* WelcomeView.swift in Sources */,
-				F78A89122A7ACDF600AC2927 /* SearchBar.swift in Sources */,
 				F78132BF2A78C9FA00F77430 /* ListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

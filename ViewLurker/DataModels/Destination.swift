@@ -11,6 +11,7 @@ import CoreLocation
 struct Destination: Identifiable, Codable{
     var id: Int
     var name: String
+    var cityName : String
     var shortDescription: String
     var description: String
     var starReview: Int
@@ -18,6 +19,7 @@ struct Destination: Identifiable, Codable{
     var image: Image {
         Image(imageName)
     }
+    var detailImageNames : [String]
     
     var coordinates: Coordinates
 

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct IOSCamera: View {
+struct IOSCameraView: View {
     var body: some View {
         NavigationView {
             ZStack{
@@ -79,7 +79,7 @@ struct IOSCamera: View {
                             Spacer()
                             
                             NavigationLink(
-                                destination: ListView(), // You can set the
+                                destination: ListView(), 
                                 label: {
                                     Image(systemName: "circle.fill")
                                         .foregroundColor(.white)
@@ -105,6 +105,6 @@ struct IOSCamera: View {
 
 struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
-        IOSCamera()
+        IOSCameraView()
     }
 }

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DestinationRow: View {
+struct DestinationRowView: View {
     var destination: Destination
     var isDark: Bool = false
     var body: some View {
@@ -25,10 +25,12 @@ struct DestinationRow: View {
                 
                 VStack(alignment: .leading) { // Align content to the leading edge (left)
                     Text(destination.name)
+                        .foregroundColor(isDark ? Color.white : Color.black)
                         .lineLimit(1) // Limit the text to a single line
                         .font(.headline) // Use a preferred font style
                         .offset(y:-20)
                     Text(destination.shortDescription)
+                        .foregroundColor(isDark ? Color.white : Color.black)
                         .padding(.bottom,10)
                         .offset(y:-15)
                     RatingView(destination: destination) // Use a preferred font style
@@ -52,7 +54,7 @@ struct DestinationRow: View {
 struct DestinationRow_Previews: PreviewProvider {
     static var previews: some View {
         Group{
-            DestinationRow(destination: destinations[0])
+            DestinationRowView(destination: destinations[0])
                 .previewLayout(.fixed(width: 300, height: 70))
          
         }

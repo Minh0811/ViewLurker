@@ -12,42 +12,44 @@ struct ListView: View {
     @AppStorage("isDarkMode") private var isDark = false
     @State private var searchText = ""
     var body: some View {
-        NavigationView {
-            ZStack {
-                if isDark{
-                    Color.black.edgesIgnoringSafeArea(.all)
-                }
-                
-                VStack {
-                    // section header
-                    HStack {
-                        Text("Seek your adventure")
-                            .font(.system(size: 30))
-                            .padding(.leading, 20)
-                        
-                        Button(action: {isDark.toggle()}, label:{
-                            isDark ? Label ("", systemImage:"lightbulb.fill")
-                            : Label ("", systemImage:"lightbulb")
-                        })
+        
+        ZStack {
+            if isDark{
+                Color.black.edgesIgnoringSafeArea(.all)
+            }
+            
+            VStack {
+                // section header
+                HStack {
+                    Text("Seek your adventure")
                         .font(.system(size: 30))
-                        .padding(.leading, 30)
-                        Spacer()
-                    }
-                    .padding(.bottom, 2)
-                    .padding(.leading, 10)
+                        .padding(.leading, 20)
                     
-                    //List of items
-                    ScrollView{
-                        VStack {
-                            ForEach(searchResults, id: \.id) { destination in
-                                DestinationRow(destination: destination, isDark: isDark)
-                                    .padding([.top, .bottom], 10)
-                                    .padding([.trailing, .leading], 10)
-                            }
+                    Button(action: {isDark.toggle()}, label:{
+                        isDark ? Label ("", systemImage:"lightbulb.fill")
+                        : Label ("", systemImage:"lightbulb")
+                    })
+                    .font(.system(size: 30))
+                    .padding(.leading, 30)
+                    Spacer()
+                }
+                .padding(.bottom, 2)
+                .padding(.leading, 10)
+                
+                //List of items
+                ScrollView{
+                    VStack {
+                        ForEach(searchResults, id: \.id) { destination in NavigationLink{
+                            DetailView(destination: destination, isDark: isDark)
+                        } label: {
+                            DestinationRowView(destination: destination, isDark: isDark)
+                                .padding([.top, .bottom], 10)
+                                .padding([.trailing, .leading], 10)
+                            
+                        }
                         }
                         Spacer()
                     }
-                    
                 }
             }
             .environment(\.colorScheme, isDark ? .dark : .light)
@@ -69,18 +71,18 @@ struct ListView: View {
                 //                }
                 //            }
                 
-//                let lcDestinationNames = destinations.filter{$0.name.lowercased()}
-//                return searchText = "" ? lcDestinationNames : lcDestinationNames.filter{
-//                    $0.name.contains(searchText.lowercased())
-//                }
-               if !(searchText.isEmpty) {
+                //                let lcDestinationNames = destinations.filter{$0.name.lowercased()}
+                //                return searchText = "" ? lcDestinationNames : lcDestinationNames.filter{
+                //                    $0.name.contains(searchText.lowercased())
+                //                }
+                if !(searchText.isEmpty) {
                     return destinations.filter {
                         $0.name.lowercased().contains(searchText.lowercased())
                     }
-               } else {
-                   
-                   return destinations
-               }
+                } else {
+                    
+                    return destinations
+                }
             }
         }
     }

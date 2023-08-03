@@ -10,7 +10,7 @@ import SwiftUI
 struct WelcomeView: View {
     @State var isActive : Bool = true
     var body: some View {
-            IOSCamera()
+            IOSCameraView()
     }
 }
 
