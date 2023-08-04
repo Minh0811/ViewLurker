@@ -17,11 +17,13 @@ struct DetailView: View {
     var body: some View {
         
         ScrollView{
-            ZStack{ customBackButton
                 VStack{
-                    imageSection
-                        .shadow(color: Color.black.opacity(0.3), radius: 20, x: 0, y: 10)
-                    
+                    ZStack{
+                        customBackButton
+                            .cornerRadius(3)
+                        imageSection
+                            .shadow(color: Color.black.opacity(0.3), radius: 20, x: 0, y: 10)
+                    }
                     VStack(alignment: .leading, spacing: 16){
                         titleSection
                         Divider()
@@ -32,10 +34,11 @@ struct DetailView: View {
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding()
-                }}
+                }
             
         }
         .ignoresSafeArea()
+        .toolbarBackground(.hidden, for: .navigationBar)
     }
 }
 
@@ -60,7 +63,7 @@ extension DetailView {
                     }, label: {
                         ZStack{
                             Rectangle()
-                                .fill(Color.gray.opacity(0.8))
+                                .fill(Color.black)
                                 .frame(width: 40, height: 40)
                             Image(systemName: "multiply.square.fill")
                                 .foregroundColor(.white)
