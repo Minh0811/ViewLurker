@@ -22,12 +22,12 @@
 		F78132BF2A78C9FA00F77430 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78132BE2A78C9FA00F77430 /* ListView.swift */; };
 		F78132C12A78CA2D00F77430 /* DestinationRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78132C02A78CA2D00F77430 /* DestinationRowView.swift */; };
 		F78132C22A78CB8B00F77430 /* destinations.json in Resources */ = {isa = PBXBuildFile; fileRef = F78132AF2A78C72500F77430 /* destinations.json */; };
-		F78A890C2A78E1CA00AC2927 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78A890B2A78E1CA00AC2927 /* SwiftUIView.swift */; };
 		F78A890E2A791F2100AC2927 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78A890D2A791F2100AC2927 /* RatingView.swift */; };
 		F78A89162A7B8A3000AC2927 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78A89152A7B8A3000AC2927 /* DetailView.swift */; };
 		F78A891A2A7BE50500AC2927 /* nhathoducba1@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = F78A89172A7BE50500AC2927 /* nhathoducba1@1x.png */; };
 		F78A891B2A7BE50500AC2927 /* nhathoducba1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F78A89182A7BE50500AC2927 /* nhathoducba1@2x.png */; };
 		F78A891C2A7BE50500AC2927 /* nhathoducba1@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F78A89192A7BE50500AC2927 /* nhathoducba1@3x.png */; };
+		F78A891E2A7CF1F400AC2927 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78A891D2A7CF1F400AC2927 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,12 +66,12 @@
 		F78132BC2A78C9B600F77430 /* LoopingBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopingBackground.swift; sourceTree = "<group>"; };
 		F78132BE2A78C9FA00F77430 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		F78132C02A78CA2D00F77430 /* DestinationRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationRowView.swift; sourceTree = "<group>"; };
-		F78A890B2A78E1CA00AC2927 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		F78A890D2A791F2100AC2927 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		F78A89152A7B8A3000AC2927 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		F78A89172A7BE50500AC2927 /* nhathoducba1@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nhathoducba1@1x.png"; path = "../../../../../Downloads/iOS Image 2/nhathoducba1@1x.png"; sourceTree = "<group>"; };
 		F78A89182A7BE50500AC2927 /* nhathoducba1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nhathoducba1@2x.png"; path = "../../../../../Downloads/iOS Image 2/nhathoducba1@2x.png"; sourceTree = "<group>"; };
 		F78A89192A7BE50500AC2927 /* nhathoducba1@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nhathoducba1@3x.png"; path = "../../../../../Downloads/iOS Image 2/nhathoducba1@3x.png"; sourceTree = "<group>"; };
+		F78A891D2A7CF1F400AC2927 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,7 +182,6 @@
 			children = (
 				F78132BE2A78C9FA00F77430 /* ListView.swift */,
 				F78132C02A78CA2D00F77430 /* DestinationRowView.swift */,
-				F78A890B2A78E1CA00AC2927 /* SwiftUIView.swift */,
 				F78A890D2A791F2100AC2927 /* RatingView.swift */,
 			);
 			path = ListView;
@@ -202,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				F78A89152A7B8A3000AC2927 /* DetailView.swift */,
+				F78A891D2A7CF1F400AC2927 /* MapView.swift */,
 			);
 			path = DetailView;
 			sourceTree = "<group>";
@@ -355,9 +355,9 @@
 				F78132B52A78C8E300F77430 /* DataModel.swift in Sources */,
 				F78A89162A7B8A3000AC2927 /* DetailView.swift in Sources */,
 				F78132BD2A78C9B600F77430 /* LoopingBackground.swift in Sources */,
+				F78A891E2A7CF1F400AC2927 /* MapView.swift in Sources */,
 				F78132B32A78C8C900F77430 /* Destination.swift in Sources */,
 				F78A890E2A791F2100AC2927 /* RatingView.swift in Sources */,
-				F78A890C2A78E1CA00AC2927 /* SwiftUIView.swift in Sources */,
 				F78132B72A78C90900F77430 /* IOSCameraView.swift in Sources */,
 				F78132812A78BF2000F77430 /* ViewLurkerApp.swift in Sources */,
 				F78132C12A78CA2D00F77430 /* DestinationRowView.swift in Sources */,

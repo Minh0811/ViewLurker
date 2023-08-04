@@ -57,24 +57,6 @@ struct ListView: View {
             
             //Search Bar
             var searchResults: [Destination] {
-                //                if searchText.isEmpty  {
-                //                    return destinations
-                //                } else if searchText.isEmpty {
-                //                    return destinations.filter {$0.starReview == 5
-                //                    }
-                //                } else if !(searchText.isEmpty) {
-                //                    return destinations.filter {
-                //                        $0.name.contains(searchText) && $0.starReview == 5
-                //                    }
-                //                } else {
-                //                    return destinations.filter {$0.name.contains(searchText)}
-                //                }
-                //            }
-                
-                //                let lcDestinationNames = destinations.filter{$0.name.lowercased()}
-                //                return searchText = "" ? lcDestinationNames : lcDestinationNames.filter{
-                //                    $0.name.contains(searchText.lowercased())
-                //                }
                 if !(searchText.isEmpty) {
                     return destinations.filter {
                         $0.name.lowercased().contains(searchText.lowercased())

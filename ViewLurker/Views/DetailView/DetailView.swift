@@ -6,24 +6,34 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct DetailView: View {
+    //For back button
+    @Environment(\.presentationMode) private var presentationMode: Binding<PresentationMode>
     var destination: Destination
     var isDark: Bool = false
+    let mapSpan = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
     var body: some View {
+        
         ScrollView{
-            VStack{
-                imageSection
-                    .shadow(color: Color.black.opacity(0.3), radius: 20, x: 0, y: 10)
-                
-                VStack(alignment: .leading, spacing: 16){
-                titleSection
-                Divider()
-                descriptionSection
-                }
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding()
-            }
+            ZStack{ customBackButton
+                VStack{
+                    imageSection
+                        .shadow(color: Color.black.opacity(0.3), radius: 20, x: 0, y: 10)
+                    
+                    VStack(alignment: .leading, spacing: 16){
+                        titleSection
+                        Divider()
+                        descriptionSection
+                        MapView(destination: destination, coordinates: destination.locationCoordinate)
+                            .aspectRatio(1, contentMode: .fit)
+                            .cornerRadius(25)
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding()
+                }}
+            
         }
         .ignoresSafeArea()
     }
@@ -31,12 +41,37 @@ struct DetailView: View {
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-            DetailView(destination: destinations[0])
-
+        DetailView(destination: destinations[0])
+        //WelcomeView()
+        
     }
 }
 
 extension DetailView {
+    
+    private var customBackButton: some View {
+        Spacer()
+            .navigationBarBackButtonHidden(true)
+            .toolbar(content: {
+                ToolbarItem (placement: .navigationBarLeading)  {
+                    
+                    Button(action: {
+                        presentationMode.wrappedValue.dismiss()
+                    }, label: {
+                        ZStack{
+                            Rectangle()
+                                .fill(Color.gray.opacity(0.8))
+                                .frame(width: 40, height: 40)
+                            Image(systemName: "multiply.square.fill")
+                                .foregroundColor(.white)
+                                .font(.system(size: 40))
+                        }
+                        
+                        
+                    })
+                }
+            })
+    }
     private var imageSection: some View {
         TabView{
             ForEach(destination.detailImageNames, id: \.self){
@@ -68,7 +103,7 @@ extension DetailView {
             Text(destination.description)
                 .font(.subheadline)
                 .foregroundColor(.secondary)
-     
+            
             if let url = URL(string: "https://hotpot.ai/icon-resizer"){
                 Link("Read more on Wikipedia", destination: url)
                     .font(.headline)
@@ -76,4 +111,8 @@ extension DetailView {
             }
         }
     }
+    
+//    private var mapLayer: some View{
+//
+//    }
 }
