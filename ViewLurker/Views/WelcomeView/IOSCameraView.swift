@@ -8,100 +8,134 @@
 import SwiftUI
 
 struct IOSCameraView: View {
+    @State private var showAlert: Bool = false
     var body: some View {
         NavigationView {
             ZStack{
                 LoopingBackground()
+                middleContent
                 VStack{
                     //Top bar
-                    ZStack{
-                        
-                        Rectangle()
-                            .foregroundColor(.black.opacity(0.5))
-                            .frame(height: 160)
-                            .offset(y:-300)
-                        
-                        
-                        HStack(spacing: 20){
-                            Button(action: {}){
-                                Image(systemName: "gearshape")
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 21))
-                            }
-                            
-                            Spacer()
-                            Button(action: {}){
-                                Image(systemName: "chevron.up.circle")
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 21))
-                                
-                            }
-                            
-                            Spacer()
-                            Button(action: {}){
-                                Image(systemName: "bolt.fill")
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 21))
-                            }
-                        }
-                        .offset(y:-270)
-                        .padding(.horizontal, 20)
-                    }
+                    topBar
                     
-                    
+                  
                     // Bottom bar
-                    ZStack{
-                        Rectangle()
-                            .foregroundColor(.black.opacity(0.5))
-                            .frame(height: 180)
-                            .offset(y:250)
-                        HStack(spacing: 20){
-                            Text("CINEMATIC")
-                            Text("VIDEO")
-                            Text("PHOTO")
-                                .foregroundColor(.yellow)
-                            Text("PORTRAIT")
-                            Text("PANO")
-                        }
-                        .foregroundColor(.white)
-                        .offset(y:185)
-                        .padding(.horizontal, 10)
-                        .padding(.trailing,20)
-                        .font(Font.system(size: 14, weight: .regular))
-                        
-                        HStack(spacing: 20){
-                            Button(action: {}){
-                                Image(systemName: "gearshape")
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 25))
-                            }
-                            
-                            Spacer()
-                            
-                            NavigationLink(
-                                destination: ListView(), 
-                                label: {
-                                    Image(systemName: "circle.fill")
-                                        .foregroundColor(.white)
-                                        .font(.system(size: 70))
-                                }
-                            )
-                            
-                            Spacer()
-                            Button(action: {}){
-                                Image(systemName: "repeat")
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 25))
-                            }
-                        }
-                        .offset(y:250)
-                        .padding(.horizontal, 20)
-                    }
+                    bottomBar
                 }
             }
         }
     }
 }
+
+extension IOSCameraView {
+    private var topBar: some View {
+        ZStack{
+            Rectangle()
+                .foregroundColor(.black.opacity(0.5))
+                .frame(height: 160)
+                .offset(y:-300)
+            HStack(spacing: 20){
+                Button(action: {}){
+                    Image(systemName: "gearshape")
+                        .foregroundColor(.white)
+                        .font(.system(size: 21))
+                }
+                
+                Spacer()
+                Button(action: {}){
+                    Image(systemName: "chevron.up.circle")
+                        .foregroundColor(.white)
+                        .font(.system(size: 21))
+                    
+                }
+                
+                Spacer()
+                Button(action: {}){
+                    Image(systemName: "bolt.fill")
+                        .foregroundColor(.white)
+                        .font(.system(size: 21))
+                }
+            }
+            .offset(y:-260)
+            .padding(.horizontal, 20)
+        }
+    }
+    
+    private var middleContent: some View {
+        VStack{
+            Text("Seek the Lost, Frame Timeless Essence")
+                .font(.largeTitle) // Larger font size
+                    .fontWeight(.bold) // Bold font weight
+                    .foregroundColor(Color.orange) // Font color
+                    .shadow(color: Color.gray.opacity(0.5), radius: 5, x: 0, y: 5) // Optional shadow for better standout effect
+        }
+    }
+    
+    
+    
+    
+    
+    private var bottomBar: some View{
+        ZStack{
+            Rectangle()
+                .foregroundColor(.black.opacity(0.5))
+                .frame(height: 180)
+                .offset(y:250)
+            HStack(spacing: 20){
+                Text("CINEMATIC")
+                Text("VIDEO")
+                Text("PHOTO")
+                    .foregroundColor(.yellow)
+                Text("PORTRAIT")
+                Text("PANO")
+            }
+            .foregroundColor(.white)
+            .offset(y:185)
+            .padding(.horizontal, 10)
+            .padding(.trailing,20)
+            .font(Font.system(size: 14, weight: .regular))
+            
+            HStack(spacing: 20){
+                
+                
+                Button(action: { showAlert = true }) {
+                    Image("profile")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 60, height: 60)
+                        .clipped()
+                        .cornerRadius(10)
+                }
+                .alert(isPresented: $showAlert) {
+                    Alert(title: Text("This is ViewLurker"), message: Text("Vo Khai Minh(s3879953) at your service"), dismissButton: .default(Text("Be lost to the abyss.")))
+                }
+                
+                Spacer()
+                NavigationLink(
+                    destination: ListView(),
+                    label: {
+                        Image(systemName: "circle.fill")
+                            .foregroundColor(.white)
+                            .font(.system(size: 70))
+                            .offset(x:-18)
+                    }
+                )
+                
+                Spacer()
+                Button(action: {}){
+                    Image(systemName: "repeat")
+                        .foregroundColor(.white)
+                        .font(.system(size: 25))
+                }
+            }
+            .offset(y:250)
+            .padding(.horizontal, 20)
+        }
+    }
+}
+
+
+
 
 struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
