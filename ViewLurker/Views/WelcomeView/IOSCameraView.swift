@@ -18,7 +18,6 @@ struct IOSCameraView: View {
                     //Top bar
                     topBar
                     
-                  
                     // Bottom bar
                     bottomBar
                 }
@@ -35,26 +34,20 @@ extension IOSCameraView {
                 .frame(height: 160)
                 .offset(y:-300)
             HStack(spacing: 20){
-                Button(action: {}){
                     Image(systemName: "gearshape")
                         .foregroundColor(.white)
                         .font(.system(size: 21))
-                }
-                
                 Spacer()
-                Button(action: {}){
+            
                     Image(systemName: "chevron.up.circle")
                         .foregroundColor(.white)
                         .font(.system(size: 21))
-                    
-                }
-                
                 Spacer()
-                Button(action: {}){
+                
                     Image(systemName: "bolt.fill")
                         .foregroundColor(.white)
                         .font(.system(size: 21))
-                }
+                
             }
             .offset(y:-260)
             .padding(.horizontal, 20)
@@ -62,12 +55,27 @@ extension IOSCameraView {
     }
     
     private var middleContent: some View {
-        VStack{
-            Text("Seek the Lost, Frame Timeless Essence")
-                .font(.largeTitle) // Larger font size
-                    .fontWeight(.bold) // Bold font weight
-                    .foregroundColor(Color.orange) // Font color
-                    .shadow(color: Color.gray.opacity(0.5), radius: 5, x: 0, y: 5) // Optional shadow for better standout effect
+        
+        ZStack{
+            Text("\"Seek the Lost, Frame Timeless Essence\"")
+                .font(.custom("Georgia", size: 35))
+                .foregroundColor(Color(red: 1, green: 0.9647058823529412, blue: 0.8627450980392157))
+                .shadow(color: Color.gray.opacity(0.5), radius: 5, x: 0, y: 5)
+                .offset(y:-60)
+            
+            VStack{
+                Text("Take a picture for your adventure")
+                    .font(.system(size: 15))
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.white)
+                    .padding()
+
+                Image(systemName: "chevron.forward.2")
+                    .foregroundColor(.white)
+                    .font(.system(size: 21))
+                    .rotationEffect(.degrees(90))
+            }
+            .offset(y:200)
         }
     }
     
@@ -92,7 +100,7 @@ extension IOSCameraView {
             .foregroundColor(.white)
             .offset(y:185)
             .padding(.horizontal, 10)
-            .padding(.trailing,20)
+            .padding(.trailing,14)
             .font(Font.system(size: 14, weight: .regular))
             
             HStack(spacing: 20){
@@ -117,7 +125,7 @@ extension IOSCameraView {
                         Image(systemName: "circle.fill")
                             .foregroundColor(.white)
                             .font(.system(size: 70))
-                            .offset(x:-18)
+                            .offset(x:-12)
                     }
                 )
                 
