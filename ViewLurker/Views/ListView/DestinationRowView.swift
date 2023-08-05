@@ -16,28 +16,16 @@ struct DestinationRowView: View {
                 .fill(isDark ? Color.black : Color.white)
                 .shadow(color: Color.gray.opacity(0.4), radius: 8, x: 0, y: 4)
             
-            HStack(spacing: 8) { // Align content to the top (vertically)
+            HStack(spacing: 8) {
                 destination.image
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 100, height: 140)
                     .clipShape(Rectangle())
                 
-                VStack(alignment: .leading) { // Align content to the leading edge (left)
-                    Text(destination.name)
-                        .foregroundColor(isDark ? Color.white : Color.black)
-                        .lineLimit(1) // Limit the text to a single line
-                        .font(.headline) // Use a preferred font style
-                        .offset(y:-20)
-                    Text(destination.shortDescription)
-                        .foregroundColor(isDark ? Color.white : Color.black)
-                        .padding(.bottom,10)
-                        .offset(y:-15)
-                    RatingView(destination: destination) // Use a preferred font style
-                        .offset(x:20, y:15)
-                }
-                .frame(maxWidth: .infinity, alignment: .leading) // Give the VStack a fixed width
-                .padding()
+                destinationContent
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding()
             }
             .padding(8) // Add some padding around the HStack
         }
@@ -46,10 +34,26 @@ struct DestinationRowView: View {
     }
 }
 
-// ... (rest of the code remains the same)
 
-
-
+extension DestinationRowView {
+    private var destinationContent: some View {
+        VStack(alignment: .leading) {
+            Text(destination.name)
+                .foregroundColor(isDark ? Color.white : Color.black)
+                .lineLimit(1)
+                .font(.headline)
+                .offset(y:-20)
+            Text(destination.shortDescription)
+                .foregroundColor(isDark ? Color.white : Color.black)
+                .padding(.bottom,10)
+                .offset(y:-15)
+            RatingView(destination: destination)
+                .offset(x:20, y:15)
+        }
+    }
+    
+    
+}
 
 struct DestinationRow_Previews: PreviewProvider {
     static var previews: some View {

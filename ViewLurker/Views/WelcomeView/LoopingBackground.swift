@@ -26,9 +26,7 @@ struct VideoPlayerView: UIViewControllerRepresentable {
         return playerViewController
     }
     
-    func updateUIViewController(_ uiViewController: AVPlayerViewController, context: Context) {
-        // No need to update anything here for this example
-    }
+    func updateUIViewController(_ uiViewController: AVPlayerViewController, context: Context) {}
     
     func makeCoordinator() -> Coordinator {
         Coordinator()

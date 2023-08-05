@@ -15,7 +15,6 @@ struct DetailView: View {
     var isDark: Bool = false
     let mapSpan = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
     var body: some View {
-        
         ScrollView{
                 VStack{
                     ZStack{
@@ -39,6 +38,8 @@ struct DetailView: View {
         }
         .ignoresSafeArea()
         .toolbarBackground(.hidden, for: .navigationBar)
+        .background(isDark ? Color.black : Color.white)
+        .environment(\.colorScheme, isDark ? .dark : .light)
     }
 }
 

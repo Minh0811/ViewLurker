@@ -20,21 +20,9 @@ struct ListView: View {
             
             VStack {
                 // section header
-                HStack {
-                    Text("Seek your adventure")
-                        .font(.system(size: 30))
-                        .padding(.leading, 20)
-                    
-                    Button(action: {isDark.toggle()}, label:{
-                        isDark ? Label ("", systemImage:"lightbulb.fill")
-                        : Label ("", systemImage:"lightbulb")
-                    })
-                    .font(.system(size: 30))
-                    .padding(.leading, 30)
-                    Spacer()
-                }
-                .padding(.bottom, 2)
-                .padding(.leading, 10)
+                sectionHeader
+                    .padding(.bottom, 2)
+                    .padding(.leading, 10)
                 
                 //List of items
                 ScrollView{
@@ -46,8 +34,7 @@ struct ListView: View {
                                 .padding([.top, .bottom], 10)
                                 .padding([.trailing, .leading], 10)
                             
-                        }
-                        }
+                        }}
                         Spacer()
                     }
                 }
@@ -62,7 +49,6 @@ struct ListView: View {
                         $0.name.lowercased().contains(searchText.lowercased())
                     }
                 } else {
-                    
                     return destinations
                 }
             }
@@ -70,7 +56,25 @@ struct ListView: View {
     }
 }
 
-
+extension ListView {
+    private var sectionHeader: some View {
+        HStack {
+            Text("Seek your adventure")
+                .font(.system(size: 30))
+                .padding(.leading, 20)
+            
+            Button(action: {isDark.toggle()}, label:{
+                isDark ? Label ("", systemImage:"lightbulb.fill")
+                : Label ("", systemImage:"lightbulb")
+            })
+            .font(.system(size: 30))
+            .padding(.leading, 30)
+            Spacer()
+        }
+    }
+    
+    
+}
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
         ListView()
