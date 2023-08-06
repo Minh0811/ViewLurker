@@ -1,10 +1,16 @@
-//
-//  DetailView.swift
-//  ViewLurker
-//
-//  Created by Minh Vo on 03/08/2023.
-//
-
+/*
+  RMIT University Vietnam
+  Course: COSC2659 iOS Development
+  Semester: 2023B
+  Assessment: Assignment 1
+  Author: Vo Khai Minh
+  ID: s3879953
+  Created  date: 03/08/2023.
+  Last modified: 04/08/2023.
+  Acknowledgement:
+  A Detail View for Locations - Swiftful Thinking
+  https://www.youtube.com/watch?v=SG7P1x5Yr7A&list=LL&index=1
+*/
 import SwiftUI
 import MapKit
 
@@ -108,7 +114,7 @@ extension DetailView {
                 .font(.subheadline)
                 .foregroundColor(.secondary)
             
-            if let url = URL(string: "https://hotpot.ai/icon-resizer"){
+            if let url = URL(string: destination.url){
                 Link("Read more on Wikipedia", destination: url)
                     .font(.headline)
                     .tint(.blue)

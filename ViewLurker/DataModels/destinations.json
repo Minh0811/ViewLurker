@@ -3,9 +3,10 @@
         "id": 1,
         "name": "Notre-Dame Cathedral Basilica of Saigon",
         "cityName": "Ho Chi Minh",
-        "shortDescription" : "Short description",
-        "description": "Experience the ultimate relaxation at this stunning beach paradise. Enjoy golden sands, crystal-clear waters, and breathtaking sunsets.",
+        "shortDescription" : "A neo-Romanesque marvel from the French",
+        "description": "The Notre-Dame Cathedral Basilica of Saigon, located in the centre of Ho Chi Minh City, is a spectacular example of French colonial architecture. This red-brick church was built between 1863 and 1880 and has two large bell towers and beautiful white marble statuary. It is a prominent landmark among the busy urban background of Vietnam's vibrant southern metropolis, serving as both a place of prayer and a symbol of the city's rich past.",
         "starReview": 4,
+        "url" : "https://hotpot.ai/icon-resizer",
         "imageName": "Saigon-Notre-Dame-cathedral",
         "detailImageNames": [
             "nhathoducba1",
@@ -21,14 +22,15 @@
         "id": 2,
         "name": "Central Post Office",
         "cityName": "Ho Chi Minh",
-        "shortDescription" : "Short description",
-        "description": "Escape to the serene beauty of the mountains. Explore lush forests, cascading waterfalls, and panoramic views from your cozy cabin.",
+        "shortDescription" : "A colonial architectural gem in Vietnam's urban",
+        "description": "The Central Post Office in Ho Chi Minh City is a spectacular architectural masterpiece that combines Gothic, Renaissance, and French colonial architecture. It is located in the middle of District 1. This ancient monument, built between 1886 and 1891 by the famed French architect Gustave Eiffel, remains as a tribute to the city's rich colonial heritage. The big hall's interior boasts elaborate telegraph booths and a mosaic map of ancient Saigon. It's not only a post office; it's also a popular tourist destination and a painful reflection of Ho Chi Minh City's diverse cultural tapestry.",
         "starReview": 5,
-        "imageName": "nhathoducba1",
+        "url" : "https://hotpot.ai/icon-resizer",
+        "imageName": "Central-Post-Office",
         "detailImageNames": [
-            "nhathoducba1",
-            "nhathoducba2",
-            "nhathoducba3"
+            "Central-Post-Office1",
+            "Central-Post-Office2",
+            "Central-Post-Office3"
           ],
         "coordinates": {
             "latitude": 34.567,
@@ -38,16 +40,17 @@
     ,
     {
         "id": 3,
-        "name": "Bến Thành Market",
+        "name": "Ben Thanh Market",
         "cityName": "Ho Chi Minh",
-        "shortDescription" : "Short description",
-        "description": "Escape to the serene beauty of the mountains. Explore lush forests, cascading waterfalls, and panoramic views from your cozy cabin.",
+        "shortDescription" : "vibrant epicenter of commerce and culture in Ho Chi Minh City",
+        "description": "Ben Thanh Market, situated in Ho Chi Minh City's District 1, is one of the city's most recognisable monuments. The market, which was founded by French colonial authorities in the 1850s and subsequently relocated to its present position in 1912, provides a colourful combination of local culture, history, and business. Visitors may discover a wide variety of things ranging from fresh fruit, seafood, and local delicacies to handicrafts, textiles, and souvenirs from its distinctive clock tower to its lively interior. The market's bustling ambience, broad selection of booths, and unique local flavours make it a must-see for visitors as well as a favourite shopping destination for residents. The streets surrounding Ben Thanh morph into a colourful night market when night falls, making it a buzzing centre at all hours.",
         "starReview": 3,
-        "imageName": "Saigon-Notre-Dame-cathedral",
+        "url" : "https://hotpot.ai/icon-resizer",
+        "imageName": "Ben-Thanh-Market",
         "detailImageNames": [
-            "nhathoducba1",
-            "nhathoducba2",
-            "nhathoducba3"
+            "Ben-Thanh-Market1",
+            "Ben-Thanh-Market2",
+            "Ben-Thanh-Market3"
           ],
         "coordinates": {
             "latitude": 34.567,
@@ -59,9 +62,10 @@
         "id": 4,
         "name": "Ho Chi Minh City's Antique Street (Le Cong Kieu)",
         "cityName": "Ho Chi Minh",
-        "shortDescription" : "Short description",
-        "description": "Escape to the serene beauty of the mountains. Explore lush forests, cascading waterfalls, and panoramic views from your cozy cabin.",
+        "shortDescription" : "A historical treasure trove nestled in the city's bustling heart",
+        "description": "Nestled in the heart of District 1, Le Cong Kieu Street, also known as Antique Street, is a treasure trove for history buffs and collectors alike. This little street, just over 200 metres long, is packed with businesses selling antiques and artefacts ranging from ancient ceramics, elaborate vases, and traditional wooden furniture to vintage coins, stamps, and old pictures. While authenticity varies, and discerning purchasers should approach with caution, the street's allure rests in its dramatic depiction of Vietnam's rich past and the tales behind each item. Whether you're a dedicated collector or just passing through, Le Cong Kieu provides a unique view into Vietnam's history, making it an important stop in Ho Chi Minh City's dynamic cultural scene.",
         "starReview": 2,
+        "url" : "https://hotpot.ai/icon-resizer",
         "imageName": "Saigon-Notre-Dame-cathedral",
         "detailImageNames": [
             "nhathoducba1",
@@ -75,11 +79,12 @@
     },
     {
         "id": 5,
-        "name": "Chao Nghiêng Rooftop",
+        "name": "Chao Nghieng Rooftop",
         "cityName": "Ho Chi Minh",
-        "shortDescription" : "Short description",
-        "description": "Escape to the serene beauty of the mountains. Explore lush forests, cascading waterfalls, and panoramic views from your cozy cabin.",
+        "shortDescription" : "An ideal spot to watch the sunset, offering a breathtaking view",
+        "description": "Chao Nghiêng Rooftop, located in the middle of Thao Dien, provides more than simply spectacular city views. This recently opened rooftop bar celebrates the rustic beauty of old Saigon, offering a calm haven in the heart of the city. Visitors may enjoy the modest, vintage aesthetics, which include retro furniture and beautiful potted plants, as well as antique technology. Chao Nghiêng offers a wonderful escape for both residents and visitors, with a broad menu ranging from drinks to exquisite nibbles and various beautiful sites like a staircase among the clouds with the landmark Landmark 81 in the background. It's a must-see for anyone looking for a mix of old-world elegance and contemporary Saigon vitality. It's located at 02 Nguyen Ba Huan, Thao Dien, Thu Duc City.",
         "starReview": 1,
+        "url" : "https://hotpot.ai/icon-resizer",
         "imageName": "Saigon-Notre-Dame-cathedral",
         "detailImageNames": [
             "nhathoducba1",

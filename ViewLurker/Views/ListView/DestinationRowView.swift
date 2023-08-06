@@ -1,9 +1,14 @@
-//
-//  DestinationRow.swift
-//  ViewSeeker
-//
-//  Created by Minh Vo on 30/07/2023.
-//
+/*
+  RMIT University Vietnam
+  Course: COSC2659 iOS Development
+  Semester: 2023B
+  Assessment: Assignment 1
+  Author: Vo Khai Minh
+  ID: s3879953
+  Created  date: 30/07/2023.
+  Last modified: 02/08/2023.
+  Acknowledgement:
+*/
 
 import SwiftUI
 
@@ -37,20 +42,28 @@ struct DestinationRowView: View {
 
 extension DestinationRowView {
     private var destinationContent: some View {
-        VStack(alignment: .leading) {
-            Text(destination.name)
-                .foregroundColor(isDark ? Color.white : Color.black)
-                .lineLimit(1)
-                .font(.headline)
-                .offset(y:-20)
-            Text(destination.shortDescription)
-                .foregroundColor(isDark ? Color.white : Color.black)
-                .padding(.bottom,10)
-                .offset(y:-15)
+        ZStack() {
+            VStack(alignment: .leading) {
+                Text(destination.name)
+                    .foregroundColor(isDark ? Color.white : Color.black)
+                    .font(.headline)
+                    .multilineTextAlignment(.leading)
+                    .offset(y:-20)
+                
+                Text(destination.shortDescription)
+                    .foregroundColor(isDark ? Color.white : .secondary)
+                    .multilineTextAlignment(.leading)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .padding(.bottom, 10)
+                    .offset(y:-15)
+            }
+            
             RatingView(destination: destination)
-                .offset(x:20, y:15)
+                .offset(y:55) // Adjust this to position the RatingView correctly
         }
     }
+
+
     
     
 }

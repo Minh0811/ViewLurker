@@ -1,9 +1,14 @@
-//
-//  RatingView.swift
-//  ViewLurker
-//
-//  Created by Minh Vo on 01/08/2023.
-//
+/*
+  RMIT University Vietnam
+  Course: COSC2659 iOS Development
+  Semester: 2023B
+  Assessment: Assignment 1
+  Author: Vo Khai Minh
+  ID: s3879953
+  Created  date: 30/07/2023.
+  Last modified: 30/07/2023.
+  Acknowledgement:
+*/
 
 import SwiftUI
 

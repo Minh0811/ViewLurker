@@ -1,3 +1,17 @@
+/*
+  RMIT University Vietnam
+  Course: COSC2659 iOS Development
+  Semester: 2023B
+  Assessment: Assignment 1
+  Author: Vo Khai Minh
+  ID: s3879953
+  Created  date: 25/07/2023.
+  Last modified: 26/08/2023.
+  Acknowledgement:
+  Looping Videos in SwiftUI - SchwiftyUI
+  https://www.youtube.com/watch?v=ipp0Yjn76io
+*/
+
 import SwiftUI
 import AVKit
 

@@ -1,9 +1,14 @@
-//
-//  ContentView.swift
-//  ViewSeeker
-//
-//  Created by Minh Vo on 26/07/2023.
-//
+/*
+  RMIT University Vietnam
+  Course: COSC2659 iOS Development
+  Semester: 2023B
+  Assessment: Assignment 1
+  Author: Vo Khai Minh
+  ID: s3879953
+  Created  date: 26/07/2023.
+  Last modified: 27/07/2023.
+  Acknowledgement:
+*/
 
 import SwiftUI
 
