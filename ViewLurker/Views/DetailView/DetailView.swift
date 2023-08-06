@@ -115,7 +115,7 @@ extension DetailView {
                 .foregroundColor(.secondary)
             
             if let url = URL(string: destination.url){
-                Link("Read more on Wikipedia", destination: url)
+                Link("Seek for more information here", destination: url)
                     .font(.headline)
                     .tint(.blue)
             }

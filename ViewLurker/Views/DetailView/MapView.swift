@@ -22,7 +22,7 @@ struct MapView: View {
     @State private var region = MKCoordinateRegion()
     
     var body: some View {
-        Map(coordinateRegion: .constant(MKCoordinateRegion(center: coordinates, span: MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02))), annotationItems: [destination]) { destination in
+        Map(coordinateRegion: .constant(MKCoordinateRegion(center: coordinates, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))), annotationItems: [destination]) { destination in
             MapAnnotation(coordinate: destination.locationCoordinate) {
                 VStack {
                     Image(systemName: "mappin.circle.fill")
