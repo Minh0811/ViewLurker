@@ -107,7 +107,6 @@
 			isa = PBXGroup;
 			children = (
 				F78132802A78BF2000F77430 /* ViewLurkerApp.swift */,
-				F78132B12A78C8A300F77430 /* Assets */,
 				F78132AA2A78C65D00F77430 /* Views */,
 				F78132AB2A78C67500F77430 /* DataModels */,
 				F78132842A78BF2600F77430 /* Assets.xcassets */,
@@ -171,13 +170,6 @@
 				F78A891D2A7CF1F400AC2927 /* MapView.swift */,
 			);
 			path = DetailView;
-			sourceTree = "<group>";
-		};
-		F78132B12A78C8A300F77430 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

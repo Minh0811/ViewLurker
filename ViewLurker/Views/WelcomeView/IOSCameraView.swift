@@ -62,6 +62,11 @@ extension IOSCameraView {
     private var middleContent: some View {
         
         ZStack{
+            Image("logo")
+                .resizable()
+                .frame(width: 100, height: 100)
+                .clipShape(Circle())
+                .offset(y:-170)
             Text("\"Seek the Lost, Frame Timeless Essence\"")
                 .font(.custom("Georgia", size: 35))
                 .foregroundColor(Color(red: 1, green: 0.9647058823529412, blue: 0.8627450980392157))
